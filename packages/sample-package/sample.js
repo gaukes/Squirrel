@@ -1,3 +1,0 @@
-sampleFunction = function () {
-  // do something…
-}

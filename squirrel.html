@@ -1,0 +1,25 @@
+<head>
+  <title>squirrel</title>
+</head>
+
+<body>
+  <h1>See your purchases.</h1>
+  {{> purchases}}
+</body>
+
+<template name="purchases">
+    <button>Click Me</button>
+    <table>
+        {{#each bills}}
+            {{> bill_row}}
+        {{/each}}
+    </table>
+</template>
+
+<template name="bill_row">
+    <tr>
+        <td>{{payee}}</td>
+        <td>{{payment_amount}}</td>
+        <td>{{payment_date}}</td>
+    </tr>
+</template>
