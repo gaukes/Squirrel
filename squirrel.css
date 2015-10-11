@@ -43,8 +43,7 @@ button:hover {
 
 #splash {
     width: 100%;
-    height: 100%;
-    min-height: 100%;
+    height: calc(100% - 50px);
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("/img/squirrelsplash.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -61,6 +60,7 @@ button:hover {
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bordered {
@@ -98,4 +98,30 @@ footer {
     bottom: 0px;
     margin-top: -50px; /* height of footer */
  
+}
+
+/*Overwrite bootstrap navbar margin-bottom*/
+.navbar {
+    margin-bottom: 0px;
+    border-radius: none;
+    border-radius: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-default {
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+    height: 50px;
+    width: 100%;
+  }
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #148000;
 }
