@@ -20,6 +20,13 @@ Template.donations.events({
     'input input[name=stocksdonationslider]': function(event) {
         Session.set("stocksdonation", event.currentTarget.value)
     },
+    "click #save": function() {
+        Meteor.call("updatedonations", Meteor.user()._id,
+            Session.get("charitydonation"),
+            Session.get("bitcoindonation"),
+            Session.get("stocksdonation")
+        )
+    },
     "click #donationsprev": function() {
         Session.set("activeelement", "purchases")
     },
