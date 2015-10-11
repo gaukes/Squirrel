@@ -1,5 +1,5 @@
 Template.splash.events({
     "click #splashnext": function() {
-        Session.set("activeelement", "purchases")
+        Session.set("activeelement", "configure")
     },
 });

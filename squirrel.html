@@ -6,15 +6,23 @@
     {{> login}}
     {{#if active "splash"}}
         {{> splash}}
-    {{/if}}
-    {{#if active "purchases"}}
-        {{> purchases}}
-    {{/if}}
-    {{#if active "donations"}}
-        {{> donations}}
-    {{/if}}
-    {{#if active "charity"}}
-        {{> charity}}
+    {{else}}
+        {{#if currentUser}}
+            {{#if active "configure"}}
+                {{> configure}}
+            {{/if}}
+            {{#if active "purchases"}}
+                {{> purchases}}
+            {{/if}}
+            {{#if active "donations"}}
+                {{> donations}}
+            {{/if}}
+            {{#if active "charity"}}
+                {{> charity}}
+            {{/if}}
+        {{else}}
+            <h1>You need to login!</h1>
+        {{/if}}
     {{/if}}
     <footer>
         <br>
@@ -22,3 +30,20 @@
     </footer>
 </body>
 
+<template name="login">
+    <div class="navbar navbar-default" role="navigation">
+        <!-- <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div> -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons}} <!-- here -->
+            </ul>
+        </div>
+    </div>
+</template>
