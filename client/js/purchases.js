@@ -4,20 +4,10 @@ Session.set("stocksdonation", 0)
 
 Template.purchases.helpers({
     bills: function() {
-        return Template.instance().myAsyncValue.get()
+        customerID = Meteor.users.findOne(Meteor.user()._id).customerID
+        return Purchases.find({customerID: customerID}).fetch()
     },
 });
-
-Template.purchases.created = function (){
-    var self = this;
-    self.myAsyncValue = new ReactiveVar([]);
-    Meteor.call("userbills", Meteor.user()._id, function (err, asyncValue) {
-        if (err)
-            console.log(err);
-        else
-            self.myAsyncValue.set(asyncValue);
-    });
-}
 
 Template.purchases.events({
     'click button': function () {

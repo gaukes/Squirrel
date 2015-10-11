@@ -12,8 +12,4 @@ Meteor.methods({
             Purchases.upsert({_id: bill._id}, {$set: {payment_date: bill.payment_date}});
         }
     },
-    "userbills": function(userID) {
-        customerID = Meteor.users.findOne(userID).customerID
-        return Purchases.find({customerID: customerID}).fetch()
-    },
 });
