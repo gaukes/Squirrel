@@ -1,1 +1,8 @@
 /* CSS declarations go here */
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
