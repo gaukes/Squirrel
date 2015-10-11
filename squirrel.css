@@ -41,6 +41,24 @@ button:hover {
     text-decoration: none;
 }
 
+a {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0px;
+    color: #148000 ;
+    font-size: 20px;
+    background: rgba(0, 0, 0,0.2);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #148000 ;
+    color: white;
+    text-decoration: none;
+}
+
 #splash {
     width: 100%;
     height: calc(100% - 50px);
@@ -121,6 +139,10 @@ footer {
     border: none;
 }
 
+.navbar-header {
+    height: 50px;
+}
+
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px;
@@ -165,6 +187,17 @@ h1 {
     padding-bottom: 20px;
 }
 
+#success {
+    color: white;
+    height: 50%;
+    max-width: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -179,4 +212,14 @@ table,th, td {
 input {
     max-width: 50%;
     margin: auto;
+}
+
+.charity-img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#about {
+    height: 50px;
+    font-size: 20px;
 }

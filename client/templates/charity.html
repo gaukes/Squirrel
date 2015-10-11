@@ -1,19 +1,38 @@
 <template name="charity">
-    <h1>Choose your charity!</h1>
-    <button type="submit" class="charitychoice">
-        <img name="pencilsofpromise" src="https://pbs.twimg.com/profile_images/530060177161322496/Hioefmiu_400x400.jpeg">
-    </button>
-    <button type="submit" class="charitychoice">
-        <img name="ideo" src="https://pbs.twimg.com/profile_images/1566996281/IDEOorg_avatar-4_400x400.png">
-    </button>
-    <h1>Congratulations! You have chosen {{charitychoice}}</h1>
-    <button type="submit" id="save">
-        SAVE
-    </button>
-    <button type="submit" id="charityprev">
-        Prev
-    </button>
-    <button type="submit" id="charitynext">
-        Next
-    </button>
+    <div id="splash">
+        <div class="row title-div text-center">
+            <h1 class="title light">Welcome to<mark class="squirrel-color">Squirrel</mark></h1>
+        </div>
+        <div class="row">
+            <div class="text-center bordered" id="purchases">
+                <h1 class="light">Step 2.2: Choose a charity!</h1>
+                <button type="submit" class="charitychoice">
+                    <img class="charity-img" name="pencilsofpromise" src="https://pbs.twimg.com/profile_images/530060177161322496/Hioefmiu_400x400.jpeg">
+                </button>
+                <button type="submit" class="charitychoice">
+                    <img class="charity-img" name="ideo" src="https://pbs.twimg.com/profile_images/1566996281/IDEOorg_avatar-4_400x400.png">
+                </button>
+                <br>
+                <h3 class="light">You have chosen: {{charitychoice}}</h3>
+                <div class="centered">
+                    <div class="row">
+                        <button type="submit" id="save">
+                            Save
+                        </button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="text-center invest col-sm-12 light">
+                            <button type="submit" id="charityprev">
+                                Prev
+                            </button>
+                            <button type="submit" id="charitynext">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
