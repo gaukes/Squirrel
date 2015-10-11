@@ -1,17 +1,37 @@
 <template name="purchases">
-    <h1>See your purchases.</h1>
-    <button>Click Me</button>
-    <table>
-        {{#each bills}}
-            {{> bill_row}}
-        {{/each}}
-    </table>
-    <button type="submit" id="purchasesprev">
-        Prev
-    </button>
-    <button type="submit" id="purchasesnext">
-        Next
-    </button>
+    <div id="splash">
+        <div class="row title-div text-center">
+            <h1 class="title light">Welcome to<mark class="squirrel-color">Squirrel</mark></h1>
+        </div>
+        <div class="row">
+            <div class="text-center bordered" id="purchases">
+                <h3 class="light">Confirm</h3>
+                <p class="light">Is this you?</p>
+                <button>View my bills</button>
+                <br>
+                <br>
+                <table>
+                    {{#each bills}}
+                        {{> bill_row}}
+                    {{/each}}
+                </table>
+                <br>
+                <div class="centered">
+                    <div class="row">
+                        <div class="text-center invest col-sm-12 light">
+                            <button type="submit" id="purchasesprev">
+                                Prev
+                            </button>
+                            <button type="submit" id="purchasesnext">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </template>
 
 <template name="bill_row">

@@ -1,27 +1,44 @@
 <template name="donations">
-    <h1>What percent would you like to donate to...</h1>
-    <div>
-        charity?
-        <input name="charitydonationslider" type="range" value={{charitydonation}} step=0.5 min=0.0 max=20.0>
-        {{charitydonation}}
+    <div id="splash">
+        <div class="row title-div text-center">
+            <h1 class="title light">Welcome to<mark class="squirrel-color">Squirrel</mark></h1>
+        </div>
+        <div class="row">
+            <div class="text-center bordered" id="donations">
+                <h3 class="light">Step 2: Pick</h3>
+                <p class="light">What percent of every purchase would you like to<mark class="squirrel-color">squirrel</mark> to...</p>
+                <div>
+                    Charity: {{charitydonation}}% of every purchase
+                    <input name="charitydonationslider" type="range" value={{charitydonation}} step=0.25 min=0.0 max=10.0>
+                </div>
+                <div>
+                    Bitcoin:{{bitcoindonation}}% of every purchase
+                    <input name="bitcoindonationslider" type="range" value={{bitcoindonation}} step=0.25 min=0.0 max=10.0>
+                </div>
+                <div>
+                    Stocks: {{stocksdonation}}% of every purchase
+                    <input name="stocksdonationslider" type="range" value={{stocksdonation}} step=0.25 min=0.0 max=10.0>
+                </div>
+                <br>
+                <div class="centered">
+                    <div class="row">
+                        <button type="submit" id="save">
+                            Save
+                        </button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="text-center invest col-sm-12 light">
+                            <button type="submit" id="donationsprev">
+                                Prev
+                            </button>
+                            <button type="submit" id="donationsnext">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        bitcoin?
-        <input name="bitcoindonationslider" type="range" value={{bitcoindonation}} step=0.5 min=0.0 max=20.0>
-        {{bitcoindonation}}
-    </div>
-    <div>
-        stocks?
-        <input name="stocksdonationslider" type="range" value={{stocksdonation}} step=0.5 min=0.0 max=20.0>
-        {{stocksdonation}}
-    </div>
-    <button type="submit" id="save">
-        SAVE
-    </button>
-    <button type="submit" id="donationsprev">
-        Prev
-    </button>
-    <button type="submit" id="donationsnext">
-        Next
-    </button>
 </template>

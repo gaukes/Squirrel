@@ -1,12 +1,33 @@
 <template name="configure">
-    <form>
-      <input type="text" name="customerid" placeholder="Type to add customer ID" />
-      <input type="submit" value="Submit" />
-    </form>
-    <button type="submit" id="configureprev">
-        Prev
-    </button>
-    <button type="submit" id="configurenext">
-        Next
-    </button>
+    
+    <div id="splash">
+        <div class="row title-div text-center">
+            <h1 class="title light">Welcome to<mark class="squirrel-color">Squirrel</mark></h1>
+        </div>
+        <div class="row">
+            <div class="text-center bordered" id="connect">
+                <h3 class="light">Step 1: Connect</h3>
+                <p class="light">Connect with your Capital One account. </p>
+                <form>
+                  <input type="text" name="customerid" placeholder="Customer ID" />
+                  <input type="submit" value="Submit" />
+                </form>
+                <br>
+                <br>
+                <div class="centered">
+                    <div class="row">
+                        <div class="text-center invest col-sm-12 light">
+                            <button type="submit" id="configureprev">
+                                Prev
+                            </button>
+                            <button type="submit" id="configurenext">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </template>

@@ -85,10 +85,17 @@ button:hover {
     padding: 5px;
 }
 
-.title {
+.title-div {
     height: 20%;
+    padding:10px;
+    margin: 0px;
 }
 
+.title {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;  
+}
 footer {
     color: white;
     background-color: black;
@@ -124,4 +131,52 @@ footer {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: white;
     background-color: #148000;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#connect {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+#purchases {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+#donations {
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,th, td {
+    border: 1px solid white;
+    color: white;
+    margin: auto;
+    padding: 5px;
+}
+
+input {
+    max-width: 50%;
+    margin: auto;
 }
