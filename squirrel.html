@@ -3,8 +3,9 @@
 </head>
 
 <body>
-    <h1>See your purchases.</h1>
-    {{> purchases}}
+    {{#if active "purchases"}}
+        {{> purchases}}
+    {{/if}}
     {{> donations}}
     {{> charity}}
 </body>
