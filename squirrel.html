@@ -3,9 +3,16 @@
 </head>
 
 <body>
+    {{#if active "splash"}}
+        {{> splash}}
+    {{/if}}
     {{#if active "purchases"}}
         {{> purchases}}
     {{/if}}
-    {{> donations}}
-    {{> charity}}
+    {{#if active "donations"}}
+        {{> donations}}
+    {{/if}}
+    {{#if active "charity"}}
+        {{> charity}}
+    {{/if}}
 </body>

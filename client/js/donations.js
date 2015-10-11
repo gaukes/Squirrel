@@ -20,4 +20,10 @@ Template.donations.events({
     'change input[name=stocksdonationslider]': function(event) {
         Session.set("stocksdonation", event.currentTarget.value)
     },
+    "click #donationsprev": function() {
+        Session.set("activeelement", "purchases")
+    },
+    "click #donationsnext": function() {
+        Session.set("activeelement", "charity")
+    },
 });

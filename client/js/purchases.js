@@ -12,4 +12,10 @@ Template.purchases.events({
     'click button': function () {
         Meteor.call("getpurchases")
     },
+    "click #purchasesprev": function() {
+        Session.set("activeelement", "splash")
+    },
+    "click #purchasesnext": function() {
+        Session.set("activeelement", "donations")
+    },
 });
