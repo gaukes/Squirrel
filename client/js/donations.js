@@ -11,13 +11,13 @@ Template.donations.helpers({
 });
 
 Template.donations.events({
-    'change input[name=charitydonationslider]': function(event) {
+    'input input[name=charitydonationslider]': function(event) {
         Session.set("charitydonation", event.currentTarget.value)
     },
-    'change input[name=bitcoindonationslider]': function(event) {
+    'input input[name=bitcoindonationslider]': function(event) {
         Session.set("bitcoindonation", event.currentTarget.value)
     },
-    'change input[name=stocksdonationslider]': function(event) {
+    'input input[name=stocksdonationslider]': function(event) {
         Session.set("stocksdonation", event.currentTarget.value)
     },
 });
