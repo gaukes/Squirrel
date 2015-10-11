@@ -1,4 +1,15 @@
 /* CSS declarations go here */
+html, 
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .green {
     background-color: green;
 }
@@ -7,8 +18,8 @@
     background-color: red;
 }
 
-.welcome {
-    height: 50%;
+body {
+    height: 100%;
 }
 
 button {
@@ -16,16 +27,16 @@ button {
     -moz-transition: all .3s;
     transition: all .3s;
     border-radius: 0px;
-    color: #800080 ;
+    color: #148000 ;
     font-size: 20px;
     background: rgba(0, 0, 0,0.4);
     padding: 10px 20px 10px 20px;
-    border: solid #800080  2px;
+    border: solid #148000  2px;
     text-decoration: none;
 }
 
 button:hover {
-    background: #800080 ;
+    background: #148000 ;
     color: white;
     text-decoration: none;
 }
@@ -34,9 +45,36 @@ button:hover {
     width: 100%;
     height: 100%;
     min-height: 100%;
-/*    background: url() no-repeat center center scroll;*/
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url("/img/squirrelsplash.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.light {
+    color: white;
+}
+
+#info {
+    max-width: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bordered {
+    border: solid #ffffff 2px;
+}
+
+.centered { margin: auto; max-width: 75%;}
+
+#splashnext {
+    margin:0 auto;
+    display:block;
+}
+
+.squirrel-color {
+    color: #148000;
+    background-color: transparent;
 }

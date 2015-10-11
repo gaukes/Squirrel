@@ -1,25 +1,40 @@
 <template name="splash">
     <div id="splash">
-        <div class="row text-center">
-        <h1>Welcome to Squirrel!</h1>
-    </div>
-    <div class="row">
-        <div class="text-center">
-            <h3>What is Squirrel?</h3>
+        <div class="row title text-center">
+            <h1 class="light">Welcome to<mark class="squirrel-color">Squirrel</mark></h1>
         </div>
-        <p>Squirrel is a free application to help you painlessly invest and give back. </p>
-    </div>
-    <div class="row">
-        <div class="green col-md-6">
-            <p>left boostrap</p>
+        <div class="row">
+            <div class="text-center bordered" id="info">
+                <h3 class="light">What is Squirrel?</h3>
+                <p class="light">Squirrel is a free application to help you painlessly invest and give back. </p>
+            </div>
         </div>
-        <div class="red col-md-6">
-            <p>right boostrap</p>
+        <br>
+        <br>
+        <div class="centered bordered">
+            <div class="row">
+                <div class="text-center invest col-sm-4 light">
+                    <h3>1. Pick</h3>
+                    <p>Pick how you want to<mark class="squirrel-color">squirrel</mark>: allocate between bitcoin, stocks, and charities.</p>
+                </div>
+                <div class="text-center bitcoin col-sm-4 light ">
+                    <h3>2. Connect</h3>
+                    <p>Connect with your Capitol One account.</p>
+                </div>
+                <div class="text-center charity col-sm-4 light">
+                    <h3>3. Enjoy</h3>
+                    <p>Enjoy growing your portofolio responbily while giving back!</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <button type="submit" id="splashnext">
-        Get Started
-    </button>
+        <br>
+        <br>
+        <div class="row">
+            <button class="text-center" type="submit" id="splashnext">
+                Get Started
+            </button>
+        </div>
+    
     </div>
     
 </template>
